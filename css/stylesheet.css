@@ -380,8 +380,8 @@ ul,li {
 /* MOBILE */
 @media (max-width: 700px) {
 
-    .card {
-        font-size: 3vw;
+    :root {
+        --color: red;
     }
 
     /* HANDLERS */

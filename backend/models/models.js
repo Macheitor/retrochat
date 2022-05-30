@@ -3,7 +3,7 @@ require('dotenv').config()
 const mongoose = require('mongoose');
 
 module.exports = async () => {
-    let mongoDB = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+    let mongoDB = process.env.MONGODB_URI;
 
     mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
     

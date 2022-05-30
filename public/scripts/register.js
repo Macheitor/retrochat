@@ -17,7 +17,7 @@ registerForm.addEventListener("submit", e => {
         return;
     }
 
-    fetch('http://localhost:8080/register', {
+    fetch('https://machado-retrochat.herokuapp.com/register', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({userName, password, repassword})

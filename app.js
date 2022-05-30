@@ -28,5 +28,5 @@ app.use((req, res) => res.status(404).send({ status: "fail", message: "PAGE NOT 
 // Sockets
 require('./backend/sockets/sockets')(io);
 
-PORT = process.env.API_PORT || 8080
+PORT = process.env.PORT || 8080
 server.listen(PORT, console.log(`Server running at http://localhost:${PORT}...`));

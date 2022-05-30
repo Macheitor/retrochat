@@ -25,7 +25,7 @@ registerForm.addEventListener("submit", e => {
     .then(response => response.json())
     .then(data => {
         if (data.status === "success") {
-            window.location.assign('../views/index.html')
+            window.location.assign('./index.html')
         } else {
             document.getElementById("register_error").innerHTML = data.message;
         }

@@ -6,7 +6,7 @@ loginForm.addEventListener("submit", e => {
     const userName = loginForm.userName.value;
     const password = loginForm.password.value;
 
-    fetch('http://localhost:8080/login', {
+    fetch('https://machado-retrochat.herokuapp.com/login', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({userName, password})

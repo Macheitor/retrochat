@@ -1,5 +1,5 @@
 
-const socket = io('https://machado-retrochat.herokuapp.com', {
+const socket = io('http://localhost:8080', {
     reconnectionDelayMax: 10000,
     query: {
         'token': sessionStorage.accessToken

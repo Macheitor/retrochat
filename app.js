@@ -17,7 +17,13 @@ require('./backend/models/models.js')();
 // Middlewares
 app.use(express.static("./public"));
 app.use(express.json());
-app.use(cors());
+
+// Cross Origin Resource Sharing
+var corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200
+  }
+app.use(cors(corsOptions));
 
 // Routes
 app.use('/register', require('./backend/routes/register'));

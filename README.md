@@ -1,6 +1,7 @@
 #RETROCHAT
 
-RETROCHAT es un chat en tiempo real desarrollado como ejercicio final del BootCamp FullStack por Barcelona Activa.
+RETROCHAT es un chat en tiempo real pensado para PC.
+Desarrollado como ejercicio final del BootCamp FullStack por Barcelona Activa.
 
 ### TECNOLOGÍAS
 - HTML, CSS, JavaScript
